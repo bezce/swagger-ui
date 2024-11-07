@@ -304,13 +304,13 @@ export const propChecker = (props, nextProps, objectList=[], ignoreList=[]) => {
 
 export const validateMaximum = ( val, max ) => {
   if (val > max) {
-    return `Value must be less than ${max}`
+    return `Value must be less than ${max + 1}`
   }
 }
 
 export const validateMinimum = ( val, min ) => {
   if (val < min) {
-    return `Value must be greater than ${min}`
+    return `Value must be greater than ${min - 1}`
   }
 }
 
